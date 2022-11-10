@@ -21,3 +21,21 @@ if (levanto_cedo || antes_das_8h) {
 if (!termino_o_trabalho || !tenho_compromisso) {
     saio_tarde
 }
+
+//Lacos de repeticao
+let nums = [12, 6, 9, 42, 11, 102, 44, 15]
+soma = 0
+
+for (let i = 0; i < nums.length; i++) {
+    soma += nums[i];
+}
+
+while (i < nums.length) {
+    soma += nums[i];
+    i++
+}
+
+do {
+    soma += nums[i];
+    i++
+} while (i < nums.length)
