@@ -11,10 +11,10 @@ function login(nome, senha) {
     let senhaInput = prompt("Informe sua senha")
 
     if (nomeInput === nome && senhaInput === senha) {
-        console.log("aprovado")
+        return (true)
     }
     else {
-        console.log("reprovado")
+        return (false)
     }
 }
 
