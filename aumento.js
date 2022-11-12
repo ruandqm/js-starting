@@ -19,6 +19,15 @@ function calcularAumento(salarioBase) {
     let salarioFinal = salarioBase + (salarioBase * aumento)
     return (salarioFinal)
 }
-let salario = calcularAumento(2000)
-console.log(salario)
-
+try {
+    let salario = calcularAumento(2000)
+    if (typeof salario != "number") {
+        throw (error)
+    }
+    else {
+        console.log(salario)
+    }
+}
+catch (error) {
+    console.error('algo deu errado')
+}
